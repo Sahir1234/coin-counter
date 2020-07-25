@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Coin Counter</title>
+
+  <meta name="author" content="Sahir Mody">
+  <meta name="description" content="Coin Counter App">
+
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static', filename='style.css')}}">
+  <link rel="icon" href="data:;base64,=">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js')}}"></script>
+
+</head>
+
+<body>
+
+  <button type="button" id="penny" value="p">Penny (<div id="pen" style="display: inline-block"></div>)</button>
+  <button type="button" id="nickel" value="n">Nickel (<div id="nick" style="display: inline-block"></div>)</button>
+  <button type="button" id="dime" value="d">Dime (<div id="dim" style="display: inline-block"></div>)</button>
+  <button type="button" id="quarter" value="q">Quarter (<div id="quart" style="display: inline-block"></div>)</button>
+
+  <h1>
+    Coins Counted: <div id="count" style="display: inline-block"></div>
+  </h1>
+
+  <h1>
+    Total Value: <div style="display: inline-block; color: gold">$</div><div id="total" style="display: inline-block"></div>
+  </h1>
+
+  <button type="button" id="undo">Undo</button>
+
+</body>
+
+</html>
