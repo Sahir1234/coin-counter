@@ -5,11 +5,8 @@ $(document).ready(function() {
 
   function updateView(counts) {
 
-      if (counts.total < 0) {
-        counts.total = 0;
-      }
       $( "#count" ).html(counts.coins);
-      $( "#total" ).html(counts.total.toFixed(2));
+      $( "#total" ).html((counts.total / 100.0).toFixed(2));
       $( "#pen" ).html(counts.p);
       $( "#nick" ).html(counts.n);
       $( "#dim" ).html(counts.d);

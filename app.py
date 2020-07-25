@@ -5,7 +5,7 @@ from flask import render_template
 from flask import jsonify
 from flask import url_for
 
-VALUES = {"q": 0.25, "d": 0.10, "n": 0.05, "p": 0.01}
+VALUES = {"q": 25, "d": 10, "n": 5, "p": 1}
 
 app = Flask(__name__)
 
